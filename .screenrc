@@ -12,4 +12,6 @@ bind f eval "hardstatus ignore"
 # Show hardstatus: ctrl-a F
 bind F eval "hardstatus alwayslastline"
 
+# Misc options
 altscreen on
+bind s
