@@ -9,3 +9,4 @@ nmap <F11> :set ignorecase! ignorecase?<cr>
 execute pathogen#infect()
 filetype plugin indent on
 set nocompatible
+let g:vim_markdown_folding_disabled = 1
