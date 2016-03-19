@@ -58,3 +58,4 @@ let g:airline_theme='murmur'
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#branch#empty_message=''
+let g:airline_powerline_fonts=1
