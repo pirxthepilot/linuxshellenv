@@ -17,6 +17,9 @@ Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'saltstack/salt-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -37,7 +40,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Themes
-"colorscheme zenburn
+colorscheme zenburn 
 
 " Markdown options
 let g:vim_markdown_folding_disabled = 1
