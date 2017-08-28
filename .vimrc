@@ -7,7 +7,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Other plugins
-Plugin 'jnurmine/Zenburn'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
@@ -19,7 +18,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'rodjek/vim-puppet'
+Plugin 'pearofducks/ansible-vim'
 Plugin 'saltstack/salt-vim'
+"Plugin 'jnurmine/Zenburn'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -40,7 +42,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Themes
-colorscheme zenburn 
+"colorscheme zenburn 
 
 " Markdown options
 let g:vim_markdown_folding_disabled = 1
