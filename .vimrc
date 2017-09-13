@@ -31,6 +31,7 @@ syntax enable
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 set background=dark
 
+nmap <F5> :SyntasticCheck<cr>
 nmap <F9> :set number! number?<cr>
 nmap <F10> :set paste! paste?<cr>
 nmap <F11> :set ignorecase! ignorecase?<cr>
@@ -61,3 +62,10 @@ let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#branch#empty_message=''
 let g:airline_powerline_fonts=1
+
+" Syntastic options
+let g:syntastic_puppet_checkers = ['puppet', 'puppetlint']
+let g:syntastic_puppet_puppetlint_args = '--no-autoloader_layout-check'
+let g:syntastic_mode_map = {
+  \ "mode": "active",
+  \ "passive_filetypes": ["puppet"] }
