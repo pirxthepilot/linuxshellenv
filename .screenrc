@@ -1,6 +1,6 @@
 term screen-256color
 defscrollback 2048
-idle 3600 lockscreen
+#idle 3600 lockscreen
 
 #hardstatus alwayslastline "%-w%{= BW}%50>%n %t%{-}%+w%<"
 hardstatus alwayslastline

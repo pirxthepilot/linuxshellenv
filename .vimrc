@@ -8,11 +8,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Other plugins
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
@@ -21,6 +19,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'rodjek/vim-puppet'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'saltstack/salt-vim'
+"Plugin 'xolox/vim-misc'
+"Plugin 'xolox/vim-colorscheme-switcher'
 "Plugin 'jnurmine/Zenburn'
 
 " All of your Plugins must be added before the following line
@@ -40,9 +40,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-" Themes
-"colorscheme zenburn 
 
 " Markdown options
 let g:vim_markdown_folding_disabled = 1
