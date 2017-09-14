@@ -61,6 +61,9 @@ let python_highlight_all=1
 au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
 au FileType python map <buffer> <F12> :call Flake8()<CR>
 
+" Shell script options
+au FileType sh set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
+
 " Puppet options
 let g:syntastic_puppet_checkers = ['puppetlint']
 let g:syntastic_puppet_puppetlint_args = '--no-autoloader_layout-check'

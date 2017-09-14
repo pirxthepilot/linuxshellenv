@@ -23,6 +23,8 @@ else
   if [ ! -d "$vundle_dir" ]; then
     echo "Installing Vundle.vim..."
     git clone $vundle_git $vundle_dir
+    echo "Installing vim plugins.."
+    vim +PluginInstall +qall
   fi
   echo "Done."
 fi
