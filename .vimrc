@@ -1,4 +1,5 @@
 set nocompatible
+set modelines=1
 filetype off 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -19,6 +20,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'rodjek/vim-puppet'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'saltstack/salt-vim'
+Plugin 'elzr/vim-json'
+"Plugin 'fatih/vim-go'
 "Plugin 'xolox/vim-misc'
 "Plugin 'xolox/vim-colorscheme-switcher'
 "Plugin 'jnurmine/Zenburn'
