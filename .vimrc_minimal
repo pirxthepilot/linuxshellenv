@@ -1,7 +1,9 @@
 syntax enable
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+set backspace=indent,eol,start
 set background=dark
 
+" Global hotkeys
 nmap <F9> :set number! number?<cr>
 nmap <F10> :set paste! paste?<cr>
 nmap <F11> :set ignorecase! ignorecase?<cr>
@@ -15,3 +17,6 @@ nnoremap <C-H> <C-W><C-H>
 " Python options
 let python_highlight_all=1
 au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
+
+" Shell script options
+au FileType sh set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix

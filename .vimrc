@@ -11,7 +11,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
@@ -21,10 +20,12 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'saltstack/salt-vim'
 Plugin 'elzr/vim-json'
-"Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go'
+Plugin 'morhetz/gruvbox'
 "Plugin 'xolox/vim-misc'
 "Plugin 'xolox/vim-colorscheme-switcher'
 "Plugin 'jnurmine/Zenburn'
+"Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -32,7 +33,11 @@ filetype plugin indent on
 
 syntax enable
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+set backspace=indent,eol,start
 set background=dark
+colorscheme gruvbox
+let g:gruvbox_contrast_dark='hard'
+
 
 " Global hotkeys
 nmap <F9> :set number! number?<cr>
@@ -50,7 +55,7 @@ let g:syntastic_mode_map = { "mode": "active" }
 
 " Airline options
 set laststatus=2
-let g:airline_theme='murmur'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#branch#empty_message=''
