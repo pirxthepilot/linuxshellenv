@@ -36,6 +36,7 @@ set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 set backspace=indent,eol,start
 set background=dark
 colorscheme gruvbox
+let g:gruvbox_termcolors=16
 let g:gruvbox_contrast_dark='hard'
 
 
@@ -76,3 +77,6 @@ au FileType sh set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent fil
 let g:syntastic_puppet_checkers = ['puppetlint']
 let g:syntastic_puppet_puppetlint_args = '--no-autoloader_layout-check'
 au FileType puppet map <buffer> <F12> :SyntasticCheck puppet puppetlint<CR>
+
+" Go options
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
