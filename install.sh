@@ -6,6 +6,7 @@ INSTALLTYPE="$1"
 THISDIR="`dirname $0`"
 vundle_dir="$HOME/.vim/bundle/Vundle.vim"
 vundle_git="https://github.com/VundleVim/Vundle.vim.git"
+ssh_dir="$HOME/.ssh"
 
 
 echo "Copying ~/.screenrc"
@@ -28,6 +29,14 @@ else
   fi
   echo "Done."
 fi
+
+echo "Copying ~/.ssh/rc"
+if [ ! -d "$ssh_dir" ]; then
+    mkdir $ssh_dir
+    chmod 700 $ssh_dir
+fi
+cp $THISDIR/.ssh/rc $ssh_dir/rc
+echo "Done."
 
 echo "Explicit permissions.."
 chmod 640 ~/.vimrc ~/.screenrc
