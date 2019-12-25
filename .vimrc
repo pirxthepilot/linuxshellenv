@@ -22,6 +22,7 @@ Plugin 'saltstack/salt-vim'
 Plugin 'elzr/vim-json'
 Plugin 'fatih/vim-go'
 Plugin 'morhetz/gruvbox'
+Plugin 'hashivim/vim-terraform'
 "Plugin 'xolox/vim-misc'
 "Plugin 'xolox/vim-colorscheme-switcher'
 "Plugin 'jnurmine/Zenburn'
@@ -80,3 +81,8 @@ au FileType puppet map <buffer> <F12> :SyntasticCheck puppet puppetlint<CR>
 
 " Go options
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
+
+" Terraform options
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
+
